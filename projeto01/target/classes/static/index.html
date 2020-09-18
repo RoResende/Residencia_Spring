@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Calculadora</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <form action="\calculadora" >
+    	<p>Valor 1: <input type="text" name="valor1" th:field="${valor1}" /></p>
+        <p>Valor 2: <input type="text" name="valor2" th:field="${valor2}" /></p>
+		<p>Soma: <input type="radio" name="operacao" value="soma" th:field="${operacao}" /></p>
+		<p>Subtracao: <input type="radio" name="operacao" value="sub" th:field="${operacao}" /></p>
+		<p>Multiplicao: <input type="radio" name="operacao" value="multi" th:field="${operacao}" /></p>
+		<p>Divisao: <input type="radio" name="operacao" value="div" th:field="${operacao}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
